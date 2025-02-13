@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชำระเงิน - Petersen's GPUShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/shop_logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-green-500 via-red-500 to-blue-500 bg-clip-text text-transparent">
+                        Petersen's GPUShop
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="landingpage.html" class="text-gray-300 hover:text-green-500 transition">หน้าแรก</a>
+                    <a href="productlistingpage.html" class="text-gray-300 hover:text-red-500 transition">สินค้า</a>
+                    <a href="howtocheckoutpage.html" class="text-gray-300 hover:text-blue-500 transition">วิธีการชำระเงิน</a>
+                    <a href="checkoutpage.html" class="text-gray-300 hover:text-red-500 transition">ชำระเงิน</a>
+                    <a href="contactpage.html" class="text-gray-300 hover:text-green-500 transition">ติดต่อ</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="loginpage.html" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition">
+                        เข้าสู่ระบบ
+                    </a>
+                    <a href="registrationpage.html" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition">
+                        สมัครสมาชิก
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-24">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-4xl font-bold mb-4">ชำระเงิน</h1>
+            <p class="text-gray-400">ลูกค้าสามารถชำระเงินได้ทันที</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-6">ที่อยู่จัดส่ง</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm mb-2">ชื่อ</label>
+                            <input type="text" class="w-full px-4 py-2 bg-gray-700 rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-2">นามสกุล</label>
+                            <input type="text" class="w-full px-4 py-2 bg-gray-700 rounded-lg">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm mb-2">ที่อยู่</label>
+                            <textarea class="w-full px-4 py-2 bg-gray-700 rounded-lg" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-2">เบอร์โทรศัพท์</label>
+                            <input type="tel" class="w-full px-4 py-2 bg-gray-700 rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-2">อีเมล</label>
+                            <input type="email" class="w-full px-4 py-2 bg-gray-700 rounded-lg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-6">วิธีการชำระเงิน</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                            <input type="radio" name="payment" class="h-4 w-4">
+                            <label class="ml-3">บัตรเครดิต / เดบิต</label>
+                        </div>
+                        <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                            <input type="radio" name="payment" class="h-4 w-4" id="bank-transfer">
+                            <label class="ml-3">โอนเงินผ่านธนาคาร</label>
+                        </div>
+                        <div id="bank-options" class="hidden space-y-4 ml-6">
+                            <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                                <input type="radio" name="bank" class="h-4 w-4 mr-3">
+                                <img src="images/scb_logo.png" alt="SCB" class="w-6 h-6 mr-3">
+                                <span>ธนาคารไทยพาณิชย์</span>
+                            </div>
+                            <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                                <input type="radio" name="bank" class="h-4 w-4 mr-3">
+                                <img src="images/ktb_logo.jpg" alt="KB" class="w-6 h-6 mr-3">
+                                <span>ธนาคารกรุงไทย</span>
+                            </div>
+                            <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                                <input type="radio" name="bank" class="h-4 w-4 mr-3">
+                                <img src="images/kb_logo.jpg" alt="KBank" class="w-6 h-6 mr-3">
+                                <span>ธนาคารกสิกรไทย</span>
+                            </div>
+                            <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                                <input type="radio" name="bank" class="h-4 w-4 mr-3">
+                                <img src="images/bbl_logo.png" alt="BBL" class="w-6 h-6 mr-3">
+                                <span>ธนาคารกรุงเทพ</span>
+                            </div>
+                            <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                                <input type="radio" name="bank" class="h-4 w-4 mr-3">
+                                <img src="images/ob_logo.jpg" alt="BBL" class="w-6 h-6 mr-3">
+                                <span>ธนาคารออมสิน</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                            <input type="radio" name="payment" class="h-4 w-4">
+                            <label class="ml-3">QR-Code</label>
+                        </div>
+                        <div class="flex items-center p-4 border border-gray-700 rounded-lg">
+                            <input type="radio" name="payment" class="h-4 w-4">
+                            <label class="ml-3">ชำระเงินปลายทาง</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="bg-gray-800 rounded-xl p-6 h-fit">
+                <h3 class="text-xl font-semibold mb-6">สรุปคำสั่งซื้อ</h3>
+                <div class="space-y-4 mb-6">
+                    <div class="flex justify-between">
+                        <span>ราคาสินค้า</span>
+                        <span>฿45,900</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>ค่าจัดส่ง</span>
+                        <span>฿0</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-700">
+                        <div class="flex justify-between text-lg font-semibold">
+                            <span>รวมทั้งสิ้น</span>
+                            <span>฿45,900</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-full px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg transition">
+                    ยืนยันการสั่งซื้อ
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('bank-transfer').addEventListener('change', function () {
+            document.getElementById('bank-options').classList.toggle('hidden', !this.checked);
+        });
+    </script>
+</body>
+</html>

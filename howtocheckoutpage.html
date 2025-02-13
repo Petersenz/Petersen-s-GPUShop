@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีการชำระเงิน - Petersen's GPUShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/shop_logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-green-500 via-red-500 to-blue-500 bg-clip-text text-transparent">
+                        Petersen's GPUShop
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="landingpage.html" class="text-gray-300 hover:text-green-500 transition">หน้าแรก</a>
+                    <a href="productlistingpage.html" class="text-gray-300 hover:text-red-500 transition">สินค้า</a>
+                    <a href="howtocheckoutpage.html" class="text-gray-300 hover:text-blue-500 transition">วิธีการชำระเงิน</a>
+                    <a href="checkoutpage.html" class="text-gray-300 hover:text-red-500 transition">ชำระเงิน</a>
+                    <a href="contactpage.html" class="text-gray-300 hover:text-green-500 transition">ติดต่อ</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="loginpage.html" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition">
+                        เข้าสู่ระบบ
+                    </a>
+                    <a href="registrationpage.html" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition">
+                        สมัครสมาชิก
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-24">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-4xl font-bold mb-4">วิธีการกรอกข้อมูลเพื่อชำระเงิน</h1>
+            <p class="text-gray-400">ทำตามขั้นตอนง่ายๆ เพื่อสั่งซื้อสินค้าได้อย่างถูกต้อง</p>
+        </div>
+        
+        <div class="space-y-12">
+            <!-- Step 1 -->
+            <div class="bg-gray-800 rounded-xl p-6 flex items-center space-x-6">
+                <span class="text-3xl font-bold text-green-400">1</span>
+                <div>
+                    <h3 class="text-xl font-semibold">กรอกข้อมูลที่อยู่จัดส่ง 📌</h3>
+                    <p class="text-gray-300 mt-2">กรอกชื่อ, นามสกุล, ที่อยู่, เบอร์โทรศัพท์ และอีเมลให้ครบถ้วน</p>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="bg-gray-800 rounded-xl p-6 flex items-center space-x-6">
+                <span class="text-3xl font-bold text-red-400">2</span>
+                <div>
+                    <h3 class="text-xl font-semibold">เลือกวิธีการชำระเงิน 💵💳</h3>
+                    <p class="text-gray-300 mt-2">เลือกช่องทางที่สะดวก เช่น บัตรเครดิต, โอนผ่านธนาคาร, QR-Code หรือชำระเงินปลายทาง</p>
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="bg-gray-800 rounded-xl p-6 flex items-center space-x-6">
+                <span class="text-3xl font-bold text-blue-400">3</span>
+                <div>
+                    <h3 class="text-xl font-semibold">ตรวจสอบคำสั่งซื้อ ❔</h3>
+                    <p class="text-gray-300 mt-2">เช็ครายละเอียดสินค้าและราคาทั้งหมดก่อนดำเนินการชำระเงิน</p>
+                </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="bg-gray-800 rounded-xl p-6 flex items-center space-x-6">
+                <span class="text-3xl font-bold text-yellow-400">4</span>
+                <div>
+                    <h3 class="text-xl font-semibold">กดปุ่ม "ยืนยันการสั่งซื้อ"  ✅</h3>
+                    <p class="text-gray-300 mt-2">เมื่อมั่นใจแล้ว ให้กดปุ่มยืนยันเพื่อดำเนินการสั่งซื้อ</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="checkoutpage.html" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-lg font-semibold transition">
+                ไปที่หน้าชำระเงิน
+            </a>
+        </div>
+    </main>
+</body>
+</html>
